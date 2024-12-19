@@ -27,7 +27,7 @@ main {
 section#login {
 background-color: white;
 width: 300px;
-height: 500px;
+height: 570px;
 border-radius: 20px; 
 margin: auto;
 position: absolute;
@@ -51,4 +51,76 @@ div#formulario {
     padding: 10px;
     display: block;
 }
- 
+ div#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+ }
+ div#formulario > p {
+    font-size: 0.8em;
+ }
+ div#formulario > p#texto {
+    padding-bottom: 10px;
+ }
+ div.campo > p > a {
+    padding: 10px;
+ }
+form > input[type=submit] {
+  display: block;  /*ficar numa linha só */
+  font-size: 1em;
+  width: 100%;
+  height: 40%;
+  background-color:#011640 ;
+  color: white;
+  border-radius: 6px;
+  border: none ;
+  padding: 3px;
+  cursor: pointer;
+  margin-bottom:7px;
+  padding: 3px;
+}
+form > input[type=submit]:hover {
+    background-color: #223b6dfd;
+}
+
+div.campo > input[type=password] {
+   margin-bottom: 6px;
+  }
+  form > a.botão {
+    display: block; /* nesses casos utilizar para colocar em uma unica linha , caso não utilizado as configurações não carregam */
+    text-align: center;
+    font-size: 1em;
+    text-decoration: none;
+    width: 100%;
+    height: 40%;
+    color: #011640;
+    background-color: white;
+    border-radius: 6px;
+    padding: 3px;
+    cursor: pointer;
+    border: 1px solid #011640;
+  }
+ form > a.botão:hover {
+   background-color:  #223b6dfd;;
+  }
+  
+  
+  form > a.botão > i {
+    font-size: 0.8em;
+  }
+  form > div.campo {
+background-color: #011640;
+margin-bottom: 10px;
+display: block;
+width: 100%;
+height: 40%;
+border-radius: 5px;
+margin: 5px 0px; /* em cima e embaixo com 5px de margin, e ambos os lados com 0px */
+color: white;
+padding: 4px;
+  }
+  form > div.campo > i {
+    font-size: 1.5em;
+  }
+  div.campo label {
+    display: none;
+  }
