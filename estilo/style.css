@@ -33,11 +33,11 @@ margin: auto;
 position: absolute;
 top: 50%;
 left: 50%;
-transform: translate(-50%, -50%);
 overflow: hidden;  /* tudo fora da borda fica escondido , acrescenta o border redius corretamente */
 box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.822);
 transition: width .3s, height .3s;
 transition-timing-function: ease;  /* suavisa a animação*/
+transform: translate(-50%, -50%);
 }
 section#login > div#img {
     background-image:  url(../imagens/pexels-img.jpg);
@@ -63,6 +63,7 @@ div#formulario {
  }
  div.campo > p > a {
     padding: 10px;
+   
  }
 form > input[type=submit] {
   display: block;  /*ficar numa linha só */
@@ -81,9 +82,13 @@ form > input[type=submit] {
 form > input[type=submit]:hover {
     background-color: #223b6dfd;
 }
+div.campo > input[type=email] {
+  cursor: pointer;
+}
 
 div.campo > input[type=password] {
    margin-bottom: 6px;
+   cursor: pointer;
   }
   form > a.botão {
     display: block; /* nesses casos utilizar para colocar em uma unica linha , caso não utilizado as configurações não carregam */
@@ -124,3 +129,11 @@ padding: 4px;
   div.campo label {
     display: none;
   }
+  div.campo  > input:focus-within {
+
+ /*quando clicar na caixa de texto, melhor utilizada quando atribuir outra cor a caixa de texto*/
+
+     background-color: white;
+
+  }
+ 
